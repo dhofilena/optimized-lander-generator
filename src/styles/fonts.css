@@ -1,0 +1,52 @@
+/*
+ * Usage instructions for new pages:
+ * - Keep this file if the new page still uses the "Neue Haas" font family.
+ * - Replace only the `src: url(...)` file names/paths if your new project uses different font files.
+ * - Keep `font-display: swap` for performance and Core Web Vitals.
+ * - If not using Neue Haas at all, you can remove these @font-face rules and update `--font-sans` in src/styles/main.css.
+ *
+ * Neue Haas Grotesk Display
+ * Place .woff2 files in /public/fonts/
+ * Minimum required: Roman (400) and Bold (700)
+ * Optional: Light (300), Medium (500), Black (900)
+ */
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('/fonts/NeueHaasDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('/fonts/NeueHaasDisplay-Roman.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('/fonts/NeueHaasDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('/fonts/NeueHaasDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('/fonts/NeueHaasDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

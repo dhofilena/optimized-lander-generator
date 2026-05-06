@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ===================================================== -->
+    <!-- 1) Core Document Metadata -->
+    <!-- ===================================================== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- Update these per page/campaign -->
+    <title>Page Title | Brand Name</title>
+    <meta name="description" content="One clear sentence describing this page for search and social previews." />
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- ===================================================== -->
+    <!-- 2) Open Graph (Facebook, LinkedIn, etc.) -->
+    <!-- ===================================================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="Page Title | Brand Name" />
+    <meta property="og:description" content="Short social description for preview cards." />
+    <meta property="og:image" content="https://example.com/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Brand Name" />
+
+    <!-- ===================================================== -->
+    <!-- 3) Twitter Card -->
+    <!-- ===================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Page Title | Brand Name" />
+    <meta name="twitter:description" content="Short social description for X/Twitter preview." />
+    <meta name="twitter:image" content="https://example.com/og-image.webp" />
+
+    <!-- ===================================================== -->
+    <!-- 4) Favicons -->
+    <!-- ===================================================== -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- ===================================================== -->
+    <!-- 5) Font Performance Hints -->
+    <!-- Keep only the weights you actually use -->
+    <!-- ===================================================== -->
+    <link rel="preload" href="/fonts/NeueHaasDisplay-Roman.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/NeueHaasDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- ===================================================== -->
+    <!-- 6) Third-Party Preconnect (optional) -->
+    <!-- Remove if not using that vendor -->
+    <!-- ===================================================== -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- ===================================================== -->
+    <!-- 7) Runtime Image Override Map -->
+    <!-- Used by src/constants/images.js -->
+    <!-- ===================================================== -->
+    <script>
+      window.__LANDER_IMAGE_URLS = {
+        // Add only keys that exist in src/constants/images.js.
+        // Set value to absolute/relative URL to override bundled image at runtime.
+        // Leave empty string to keep bundled fallback.
+        heroChaleneStudio: '',
+        heroChaleneFitness: '',
+        storyApproachChalene: '',
+        storyPartnerChaleneBrock: '',
+        productMagnesiumBreakthrough: '',
+        productMasszymes: '',
+        productProbioticBreakthrough: '',
+        productBerberineBreakthrough: '',
+        productMagnesiumDrink: '',
+        commentChaleneAvatar: '',
+        logo: '',
+      };
+    </script>
+
+    <!-- ===================================================== -->
+    <!-- 8) App Entry (Vite) -->
+    <!-- Keep this script unless your app entry changes -->
+    <!-- ===================================================== -->
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- ===================================================== -->
+    <!-- 9) Structured Data (JSON-LD) -->
+    <!-- Keep only schemas relevant to your page -->
+    <!-- ===================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Product or Offer Name",
+        "image": "https://example.com/product-image.webp",
+        "description": "Product/offer description used for structured data.",
+        "brand": { "@type": "Brand", "name": "Brand Name" },
+        "sku": "[SKU]",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://example.com/",
+          "priceValidUntil": "2027-12-31",
+          "seller": { "@type": "Organization", "name": "Brand Name" }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "100",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Brand Name",
+        "url": "https://example.com",
+        "logo": "https://example.com/logo.webp",
+        "sameAs": [
+          "https://www.instagram.com/bioptimizers",
+          "https://www.facebook.com/bioptimizers",
+          "https://www.youtube.com/@bioptimizers"
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans antialiased">
+    <!-- Accessibility: keyboard users can skip repeated nav -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- App mount target (required by src/main.js) -->
+    <div id="app"></div>
+  </body>
+</html>

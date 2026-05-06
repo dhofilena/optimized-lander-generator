@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wireframe — The Gary Brecka Protocol (BIOPTIMIZERS)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#1a3d2e',
+              cream: '#faf9f6',
+              gold: '#c9a227',
+            },
+          },
+          fontFamily: {
+            display: ['Georgia', 'Times New Roman', 'serif'],
+            sans: ['system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-brand-cream text-gray-900 font-sans antialiased">
+  <!-- NOTE: Live site may show a quiz / mystery-discount modal on first visit (interactive). Wireframe includes a static modal block below for layout reference. -->
+
+  <!-- ==========================================
+       Section: Promo bar | Layout: full-width strip
+       ========================================== -->
+  <div class="bg-white border-b border-gray-200 text-center text-sm py-2 px-4 text-gray-700">
+    <a href="#" class="text-emerald-900 font-medium underline">Subscribe &amp; Save 20%</a>
+    — Plus a Free 12-Pack on Us.
+    <a href="#" class="font-semibold text-gray-900">Subscribe now</a>
+  </div>
+
+  <!-- ==========================================
+       Section: Site header | Layout: nav row
+       ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-gray-100">
+    <nav aria-label="Primary" class="mx-auto max-w-7xl flex items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div class="font-bold tracking-tight text-lg">BIOPTIMIZERS</div>
+      <ul class="hidden lg:flex items-center gap-6 text-sm text-gray-700">
+        <li><a href="#" class="hover:text-gray-900">Shop Best Sellers</a></li>
+        <li><a href="#" class="hover:text-gray-900">Shop by Benefit</a></li>
+        <li><a href="#" class="hover:text-gray-900">Learn</a></li>
+        <li><a href="#" class="hover:text-gray-900">Subscribe and Save</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <a href="#" class="rounded-full border border-gray-300 px-4 py-2 text-sm font-medium min-h-[44px] inline-flex items-center">Shop All</a>
+        <a href="#" class="rounded-full bg-gray-900 text-white px-4 py-2 text-sm font-medium min-h-[44px] inline-flex items-center">Take the Quiz</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       Section: Hero — Gary Brecka Protocol | Layout: split (text + visual cluster)
+       (Live page: decorative product photography right; stars + reviews above headline)
+       ========================================== -->
+  <section aria-labelledby="hero-heading" class="relative overflow-hidden bg-gradient-to-b from-stone-100 to-brand-cream py-12 sm:py-20 lg:py-24 px-4 sm:px-6">
+    <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div>
+        <p class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+          <span class="text-brand-gold" aria-hidden="true">★★★★★</span>
+          <span>54,500+ Bioptimizers customer reviews</span>
+        </p>
+        <p class="text-xs sm:text-sm font-semibold tracking-[0.2em] text-gray-500 uppercase mb-2">GARY BRECKA</p>
+        <h1 id="hero-heading" class="font-display text-4xl sm:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
+          A NEW ERA OF <span class="italic text-brand-green">ABSORPTION</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-xl">
+          A protocol built on biology, five essential compounds delivered in forms designed for better absorption.
+        </p>
+        <a href="#formulas" class="mt-8 inline-flex items-center justify-center rounded-full border-2 border-gray-900 px-8 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition min-h-[44px]">
+          Explore The Protocol
+        </a>
+      </div>
+      <div class="relative min-h-[280px] lg:min-h-[360px]">
+        <!-- Image placeholder: hero product cluster (NAD+ sachet, botanicals, fruit) | 600x480 -->
+        <div class="absolute inset-0 bg-gray-200 rounded-2xl flex flex-col items-center justify-center text-gray-500 text-sm p-6 text-center border border-dashed border-gray-400" style="aspect-ratio: 5/4;">
+          Hero imagery: Liposomal NAD+ product + botanical / fruit styling<br />
+          (600 × 480 approx)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Mystery discount modal (wireframe) | Layout: centered card
+       NOTE: On live site this is a fixed overlay (z-index above hero). Shown inline here for scrollable wireframe review.
+       ========================================== -->
+  <section aria-labelledby="modal-quiz-heading" class="py-10 px-4 sm:px-6 bg-gray-900/10 border-y border-dashed border-gray-300">
+    <div class="mx-auto max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center border border-gray-200">
+      <div class="text-xs font-semibold tracking-widest text-gray-400 mb-4">BIOPTIMIZERS</div>
+      <h2 id="modal-quiz-heading" class="font-display text-3xl text-gray-900">You've got a Mystery Discount</h2>
+      <p class="mt-3 text-gray-600 text-sm">To claim, please tell us: What Is Your Top Wellness Goal?</p>
+      <div class="mt-6 space-y-2">
+        <button type="button" class="w-full rounded-lg bg-emerald-900 text-white py-3 text-sm font-medium min-h-[44px]">Gut Health</button>
+        <button type="button" class="w-full rounded-lg bg-emerald-900 text-white py-3 text-sm font-medium min-h-[44px]">Beauty</button>
+        <button type="button" class="w-full rounded-lg bg-emerald-900 text-white py-3 text-sm font-medium min-h-[44px]">Brain Health</button>
+        <button type="button" class="w-full rounded-lg bg-emerald-900 text-white py-3 text-sm font-medium min-h-[44px]">Immunity</button>
+        <button type="button" class="w-full rounded-lg bg-emerald-900 text-white py-3 text-sm font-medium min-h-[44px]">All of the Above</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Quote — Biology Behind Every Choice | Layout: single column centered
+       (Duplicate block on source collapsed to one wireframe section)
+       ========================================== -->
+  <section aria-labelledby="biology-heading" class="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 id="biology-heading" class="font-display text-3xl sm:text-4xl font-light text-gray-900">
+        The Biology Behind Every Choice
+      </h2>
+      <blockquote class="mt-8 text-lg text-gray-600 leading-relaxed">
+        "Cheap supplements with poor absorption are only good for making expensive pee. Bioptimizers uses pharmaceutical-grade ingredients, zero fillers, and the most advanced delivery technology on the market, and that's the standard I hold everything I put in my body to."
+      </blockquote>
+      <p class="mt-6 text-sm font-medium text-gray-900">— Gary Brecka <span class="text-gray-500 font-normal">Human Biologist and Bio Hacker</span></p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Formula intro | Layout: centered intro
+       ========================================== -->
+  <section id="formulas" aria-labelledby="formulas-intro-heading" class="py-12 px-4 sm:px-6 bg-stone-50 border-y border-stone-200">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 id="formulas-intro-heading" class="font-display text-2xl sm:text-3xl text-gray-900">
+        Start with the formula that fits your goals.
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Five formulas, one delivery system. Select below to explore benefits and pricing.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Product — Liposomal NAD+ | Layout: stacked (carousel/tab on live site)
+       ========================================== -->
+  <article aria-labelledby="product-nad-heading" class="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+    <div class="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <!-- Image placeholder: Liposomal NAD+ packshot | 400x400 -->
+        <div class="bg-gray-200 rounded-xl flex items-center justify-center text-gray-500 text-sm aspect-square max-w-md mx-auto md:mx-0 border border-dashed border-gray-400">
+          Product: Liposomal NAD+<br />(400 × 400)
+        </div>
+      </div>
+      <div>
+        <h2 id="product-nad-heading" class="font-display text-3xl sm:text-4xl text-gray-900">Liposomal NAD+</h2>
+        <p class="mt-2 text-xs font-semibold uppercase tracking-wider text-gray-500">Gary Brecka Says</p>
+        <h3 class="mt-4 text-xl font-medium text-gray-800">"NAD+ is the key to cellular repair and longevity."</h3>
+        <ul class="mt-6 space-y-2 text-gray-600 text-sm sm:text-base">
+          <li>Supports cellular energy and healthy aging*</li>
+          <li>Supports cellular energy and longevity*</li>
+          <li>Liposomal delivery for superior absorption compared to standard supplements*</li>
+        </ul>
+        <a href="#" class="mt-8 inline-flex rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-semibold min-h-[44px] items-center">Explore NAD+</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ==========================================
+       Section: Product — Liposomal Glutathione | Layout: split (image left on md)
+       ========================================== -->
+  <article aria-labelledby="product-glu-heading" class="py-16 sm:py-20 px-4 sm:px-6 bg-stone-50">
+    <div class="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-start md:flex-row-reverse">
+      <div class="md:order-2">
+        <div class="bg-gray-200 rounded-xl aspect-square max-w-md mx-auto md:mx-0 flex items-center justify-center text-gray-500 text-sm border border-dashed border-gray-400">
+          Product: Liposomal Glutathione<br />(400 × 400)
+        </div>
+      </div>
+      <div class="md:order-1">
+        <h2 id="product-glu-heading" class="font-display text-3xl text-gray-900">Liposomal Glutathione</h2>
+        <p class="mt-2 text-xs font-semibold uppercase text-gray-500">Gary Brecka Says</p>
+        <p class="mt-4 text-lg text-gray-700">"The mother of all antioxidants, that most people have never heard of."</p>
+        <ul class="mt-6 space-y-2 text-gray-600">
+          <li>Supports cellular detoxification pathways*</li>
+          <li>Supports antioxidant defense against oxidative stress*</li>
+          <li>Supports gut health and glutathione balance*</li>
+        </ul>
+        <a href="#" class="mt-8 inline-flex rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-semibold min-h-[44px] items-center">Explore Glutathione</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ==========================================
+       Section: Product — Liposomal Advanced Creatine
+       ========================================== -->
+  <article aria-labelledby="product-creatine-heading" class="py-16 px-4 sm:px-6 bg-white">
+    <div class="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-start">
+      <div class="bg-gray-200 rounded-xl aspect-square max-w-md mx-auto md:mx-0 flex items-center justify-center text-gray-500 text-sm border border-dashed border-gray-400">
+        Product: Liposomal Advanced Creatine<br />(400 × 400)
+      </div>
+      <div>
+        <h2 id="product-creatine-heading" class="font-display text-3xl text-gray-900">Liposomal Advanced Creatine</h2>
+        <p class="mt-2 text-xs font-semibold uppercase text-gray-500">Gary Brecka Says</p>
+        <p class="mt-4 text-lg text-gray-700">"Creatine supports brain function, energy, and recovery. It's part of my daily routine."</p>
+        <ul class="mt-6 space-y-2 text-gray-600">
+          <li>Supports ATP production for cellular energy*</li>
+          <li>Supports physical and cognitive performance*</li>
+          <li>Supports energy demands in brain and muscle*</li>
+        </ul>
+        <a href="#" class="mt-8 inline-flex rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-semibold min-h-[44px] items-center">Explore Advanced Creatine</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ==========================================
+       Section: Product — Irish Sea Moss
+       ========================================== -->
+  <article aria-labelledby="product-seamoss-heading" class="py-16 px-4 sm:px-6 bg-stone-50">
+    <div class="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-start">
+      <div class="md:order-2">
+        <div class="bg-gray-200 rounded-xl aspect-square max-w-md mx-auto md:mx-0 flex items-center justify-center text-gray-500 text-sm border border-dashed border-gray-400">
+          Product: Irish Sea Moss<br />(400 × 400)
+        </div>
+      </div>
+      <div class="md:order-1">
+        <h2 id="product-seamoss-heading" class="font-display text-3xl text-gray-900">Irish Sea Moss</h2>
+        <p class="mt-2 text-xs font-semibold uppercase text-gray-500">Gary Brecka Says</p>
+        <p class="mt-4 text-lg text-gray-700">"Sea moss supports gut health, minerals, and microbiome balance. It's foundational."</p>
+        <ul class="mt-6 space-y-2 text-gray-600">
+          <li>Supports gut health and healthy digestion*</li>
+          <li>Fuels cellular energy and supports healthy aging*</li>
+          <li>Protects cells from stress*</li>
+        </ul>
+        <a href="#" class="mt-8 inline-flex rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-semibold min-h-[44px] items-center">Explore Irish Sea Moss</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ==========================================
+       Section: Product — Liquid Colostrum
+       ========================================== -->
+  <article aria-labelledby="product-colostrum-heading" class="py-16 px-4 sm:px-6 bg-white">
+    <div class="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-start">
+      <div class="bg-gray-200 rounded-xl aspect-square max-w-md mx-auto md:mx-0 flex items-center justify-center text-gray-500 text-sm border border-dashed border-gray-400">
+        Product: Liquid Colostrum<br />(400 × 400)
+      </div>
+      <div>
+        <h2 id="product-colostrum-heading" class="font-display text-3xl text-gray-900">Liquid Colostrum</h2>
+        <p class="mt-2 text-xs font-semibold uppercase text-gray-500">Gary Brecka Says</p>
+        <p class="mt-4 text-lg text-gray-700">"Colostrum supports gut repair and immune health. I recommend it for anyone fixing their gut."</p>
+        <ul class="mt-6 space-y-2 text-gray-600">
+          <li>Helps maintain a healthy gut lining*</li>
+          <li>Supports a healthy immune system*</li>
+          <li>Nourishes skin, hair, and nails*</li>
+        </ul>
+        <a href="#" class="mt-8 inline-flex rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-semibold min-h-[44px] items-center">Explore Liquid Colostrum</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ==========================================
+       Section: Story — Approach to Wellness
+       ========================================== -->
+  <section aria-labelledby="approach-heading" class="py-16 sm:py-20 px-4 sm:px-6 bg-stone-100">
+    <div class="mx-auto max-w-3xl">
+      <h2 id="approach-heading" class="font-display text-3xl text-gray-900">Gary Brecka's Approach to Wellness</h2>
+      <p class="mt-6 text-gray-600 leading-relaxed">
+        Gary Brecka built his reputation helping people understand what's happening inside their bodies. His approach starts with the biology: understand what the body needs, then support the systems that keep it working.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Story — Why Gary Partnered With Bioptimizers
+       ========================================== -->
+  <section aria-labelledby="partner-heading" class="py-16 px-4 sm:px-6 bg-white">
+    <div class="mx-auto max-w-3xl">
+      <h2 id="partner-heading" class="font-display text-3xl text-gray-900">Why Gary Partnered With Bioptimizers</h2>
+      <p class="mt-6 text-gray-600 leading-relaxed">
+        That philosophy is what led to this collaboration. Bioptimizers builds formulas using a similar framework — carefully sourced ingredients, delivery systems designed to support absorption, and science-backed compounds manufactured to high standards.
+      </p>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        Some formulas use liposomal delivery to improve nutrient absorption, while others rely on compounds long used to support gut health, immune function, and cellular energy.
+      </p>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        Gary reviewed the research behind each formula and built a protocol around the ones that support the systems he focuses on most.*
+      </p>
+      <p class="mt-8 text-lg font-medium text-gray-900">
+        Over millions of people trust Gary Brecka for one reason: the biology works.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Stats — Trusted by Gary
+       ========================================== -->
+  <section aria-labelledby="stats-heading" class="py-16 px-4 sm:px-6 bg-emerald-950 text-white">
+    <div class="mx-auto max-w-5xl text-center">
+      <h2 id="stats-heading" class="font-display text-2xl sm:text-3xl">Trusted by Gary. Backed by Thousands.</h2>
+      <div class="mt-12 grid sm:grid-cols-2 gap-10">
+        <div>
+          <p class="font-display text-4xl sm:text-5xl text-brand-gold">5 million+</p>
+          <p class="mt-2 text-sm text-stone-300">Total Social Following</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl sm:text-5xl text-brand-gold">54,500+</p>
+          <p class="mt-2 text-sm text-stone-300">Bioptimizers customer reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: FAQ accordion (collapsed state wireframe)
+       ========================================== -->
+  <section aria-labelledby="faq-heading" class="py-16 sm:py-20 px-4 sm:px-6 bg-brand-cream">
+    <div class="mx-auto max-w-3xl">
+      <h2 id="faq-heading" class="font-display text-3xl text-center text-gray-900">Got questions? We have answers!</h2>
+      <div class="mt-10 space-y-2">
+        <button type="button" class="w-full text-left flex justify-between items-center gap-4 rounded-lg border border-gray-200 bg-white px-4 py-4 text-sm font-medium text-gray-900 min-h-[44px]">
+          Why did Gary Brecka choose Bioptimizers?
+          <span class="text-gray-400" aria-hidden="true">+</span>
+        </button>
+        <button type="button" class="w-full text-left flex justify-between items-center gap-4 rounded-lg border border-gray-200 bg-white px-4 py-4 text-sm font-medium text-gray-900 min-h-[44px]">
+          What makes Bioptimizers's formulas different from other brands?
+          <span class="text-gray-400" aria-hidden="true">+</span>
+        </button>
+        <button type="button" class="w-full text-left flex justify-between items-center gap-4 rounded-lg border border-gray-200 bg-white px-4 py-4 text-sm font-medium text-gray-900 min-h-[44px]">
+          Can these five products be taken together?
+          <span class="text-gray-400" aria-hidden="true">+</span>
+        </button>
+        <button type="button" class="w-full text-left flex justify-between items-center gap-4 rounded-lg border border-gray-200 bg-white px-4 py-4 text-sm font-medium text-gray-900 min-h-[44px]">
+          Which product should I start with?
+          <span class="text-gray-400" aria-hidden="true">+</span>
+        </button>
+      </div>
+      <p class="mt-8 text-xs text-gray-500">
+        *This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Section: Final CTA
+       ========================================== -->
+  <section aria-labelledby="final-cta-heading" class="py-20 px-4 sm:px-6 bg-white text-center border-t border-gray-200">
+    <h2 id="final-cta-heading" class="font-display text-3xl sm:text-4xl max-w-3xl mx-auto text-gray-900">
+      Gary Has Done the Research. All You Have to Do Is Start.
+    </h2>
+    <a href="#" class="mt-10 inline-flex rounded-full bg-emerald-900 text-white px-10 py-4 text-sm font-semibold min-h-[44px] items-center">
+      Start Your Protocol
+    </a>
+  </section>
+
+  <!-- ==========================================
+       Section: Footer (simplified wireframe)
+       ========================================== -->
+  <footer class="border-t border-gray-200 bg-stone-100 py-12 px-4 sm:px-6" role="contentinfo">
+    <div class="mx-auto max-w-7xl grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-gray-600">
+      <div>
+        <p class="font-bold text-gray-900">BIOPTIMIZERS</p>
+        <p class="mt-2">Shop, Learn, Support links (wireframe).</p>
+      </div>
+      <nav aria-label="Footer shop">
+        <p class="font-semibold text-gray-900">Shop</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="hover:underline">Best Sellers</a></li>
+          <li><a href="#" class="hover:underline">Shop All</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer learn">
+        <p class="font-semibold text-gray-900">Learn</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="hover:underline">Our Story</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="font-semibold text-gray-900">Get In Early</p>
+        <p class="mt-2 text-xs">Email signup (wireframe).</p>
+      </div>
+    </div>
+    <p class="mt-10 text-center text-xs text-gray-500">© 2026 BIOPTIMIZERS LLC — Wireframe derived from public page content.</p>
+  </footer>
+
+  <!-- Cookie bar wireframe -->
+  <div class="fixed bottom-0 inset-x-0 z-30 border-t border-gray-200 bg-white/95 p-3 text-xs text-gray-600 flex flex-wrap items-center justify-between gap-2">
+    <p class="max-w-4xl">Our site and third parties use cookies and pixels… <a href="#" class="underline">Cookies and Pixels Policy</a> · <a href="#" class="underline">Privacy Policy</a></p>
+    <button type="button" class="rounded bg-gray-900 text-white px-4 py-2 text-xs font-semibold min-h-[44px]">GOT IT</button>
+  </div>
+</body>
+</html>

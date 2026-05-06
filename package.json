@@ -1,0 +1,20 @@
+{
+  "name": "optimized-lander-generator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/convert-images.js && vite build",
+    "preview": "vite preview",
+    "convert:images": "node scripts/convert-images.js",
+    "fetch:images": "node scripts/fetch-images-to-webp.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.4",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}
