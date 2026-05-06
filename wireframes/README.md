@@ -10,7 +10,7 @@ This `wireframes` folder is the staging area for page structure references befor
 
 Current example:
 
-- `cymbiotika-gary-brecka-protocol.html`
+- `cymbiotika-gary-brecka-protocol.html` (legacy sample wireframe; optional to keep or replace)
 
 ## How This Area Is Used
 

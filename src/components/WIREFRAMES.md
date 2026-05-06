@@ -10,8 +10,8 @@ Use wireframe components as structural placeholders while building or rebuilding
 
 ## Current Wireframe In This Project
 
-- `ProtocolFooterWireframe.js` is the active wireframe-style component.
-- It is wired in `src/main.js` via `ProtocolFooterWireframe()`.
+- No active wireframe component is required by default.
+- Create and wire `*Wireframe` components in `src/main.js` only when you need structure-first iteration.
 
 ## Naming Convention
 

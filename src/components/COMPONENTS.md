@@ -16,12 +16,10 @@ For wireframe-specific guidance, see `src/components/WIREFRAMES.md`.
 
 ## Real Patterns In This Folder
 
-- `ProtocolBioptimizersProducts.js` uses internal helper functions (`testimonialBlock`, `benefitList`, `cta`) plus one exported component.
-- Image-based sections import from `src/constants/images.js` and use explicit `alt`, `width`, `height`, and `decoding`.
-- Hero/LCP images use `loading="eager"` and `fetchpriority="high"`. Non-critical images use `loading="lazy"`.
-- Footer provides `<span id="year"></span>` and `src/main.js` sets the year after render.
-- FAQ uses `<details>` + `.faq-accordion` classes (only keep these styles/components if the new page still needs accordion behavior).
-- Modal component currently outputs markup only; behavior is controlled elsewhere (or intentionally static).
+- Documentation-first setup: add guides/templates first, then add section components as needed.
+- Image-based sections should import from `src/constants/images.js` and use explicit `alt`, `width`, `height`, and `decoding`.
+- Hero/LCP images should use `loading="eager"` and `fetchpriority="high"`. Non-critical images should use `loading="lazy"`.
+- Prefer small private helper functions inside component files when they improve readability/reuse.
 
 ## How To Wire Components In `src/main.js`
 
@@ -31,26 +29,20 @@ For wireframe-specific guidance, see `src/components/WIREFRAMES.md`.
 
 ```js
 root.innerHTML = `
-  ${ProtocolPromoBar()}
-  ${ProtocolSiteHeader()}
   <main id="main" role="main" class="font-sans">
-    ${ProtocolHero()}
-    ${ProtocolFormulaIntro()}
-    ...
+    ${LandingHero()}
+    ${LandingFeatures()}
+    ${LandingFAQ()}
   </main>
-  ${ProtocolFooterWireframe()}
-  ${ProtocolMysteryDiscountModal()}
 `;
 ```
 
 ## New Page Workflow (Recommended)
 
 1. Keep foundation CSS in `src/styles/main.css`.
-2. Decide if you are renaming from `Protocol*` to new names (for example, `LandingHero`).
+2. Define a clear component naming scheme for this project (for example, `LandingHero`, `LandingFAQ`).
 3. Replace or remove old sections one by one.
-4. Keep only shared components you still need:
-   - likely reusable: header, footer, promo bar
-   - likely page-specific: hero, product sections, story sections, FAQ, CTA, modal
+4. Keep only shared components you still need and remove stale/unused files.
 5. Update `src/main.js` imports and render order.
 6. Remove unused components/images/classes after final layout is stable.
 
@@ -94,5 +86,5 @@ export function LandingSection() {
 - No broken anchor targets (for example, nav links point to existing section IDs).
 - All image `alt` text is descriptive and dimensions are present.
 - Interactive controls meet tap target guidance (`min-h-[44px]` where relevant).
-- Unused `Protocol*` files and stale image keys are removed.
+- Unused component files and stale image keys are removed.
 

@@ -1,6 +1,6 @@
-# Bioptimizers x Gary Brecka — Landing Page
+# Optimized Lander Generator
 
-Production-grade landing page built with **Vite** and **Tailwind CSS v4**, optimized for **Safari** and **Chrome**, with full SEO structure and Google PageSpeed compliance.
+Generalized landing page builder boilerplate built with **Vite** and **Tailwind CSS v4**, optimized for **Safari** and **Chrome**, with SEO-ready structure and performance defaults.
 
 ## Quick Start
 
